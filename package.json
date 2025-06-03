@@ -1,16 +1,18 @@
 {
   "name": "@hello-spaceman/generate-apca-theme",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "author": "Hello Spaceman <hello@timspears.com>",
   "type": "module",
-  "main": "src/index.js",
+  "main": "dist/generate-apca-theme.cjs.js",
+  "module": "dist/generate-apca-theme.es.js",
   "exports": {
-    ".": "./src/index.js",
-    "./generate-apca-theme": "./src/generate-apca-theme.js"
+    ".": {
+      "import": "./dist/generate-apca-theme.es.js",
+      "require": "./dist/generate-apca-theme.cjs.js"
+    }
   },
   "files": [
-    "src",
-    "generate-apca-theme.js"
+    "dist"
   ],
   "repository": {
     "type": "git",
