@@ -6,7 +6,10 @@ export default defineConfig({
          entry: './src/index.js',
          name: 'generateAPCATheme',
          formats: ['es'],
-         fileName: `generate-apca-theme`
+         fileName: `generate-apca-theme`,
       },
+      rollupOptions: {
+         external: ['apca-w3', 'colorjs.io', 'colorparsley']
+      }
    }
 });

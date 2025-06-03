@@ -1,8 +1,21 @@
 {
-  "name": "generate-apca-theme",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@hello-spaceman/generate-apca-theme",
+  "version": "1.1.0",
+  "author": "Hello Spaceman <hello@timspears.com>",
   "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./generate-apca-theme": "./src/generate-apca-theme.js"
+  },
+  "files": [
+    "src",
+    "generate-apca-theme.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hello-spaceman/generate-apca-theme.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,5 +27,11 @@
     "colorjs.io": "^0.5.2",
     "colorparsley": "^0.1.8",
     "vite": "^6.3.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hello-spaceman/generate-apca-theme/issues"
+  },
+  "homepage": "https://github.com/hello-spaceman/generate-apca-theme#readme",
+  "license": "ISC",
+  "description": ""
 }
