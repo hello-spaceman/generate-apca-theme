@@ -1,0 +1,18 @@
+{
+  "name": "generate-apca-theme",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "demo": "vite --config demo/demo-vite.config.js"
+  },
+  "devDependencies": {
+    "apca-w3": "^0.1.9",
+    "colorjs.io": "^0.5.2",
+    "colorparsley": "^0.1.8",
+    "vite": "^6.3.5"
+  }
+}

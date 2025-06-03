@@ -1,0 +1,58 @@
+:root {
+  --color-1: rebeccapurple;
+  --color-2: #f1f1f1;
+}
+
+body {
+  block-size: 100vb;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+section {
+  block-size: 100vb;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  inline-size: 100vi;
+  place-items: center;
+}
+
+h1 {
+  display: none;
+}
+
+button {
+  appearance: none;
+  background-color: var(--color-1);
+  border: 2px solid var(--color-2);
+  box-shadow: 0px 0px 0px 2px var(--color-1);
+  color: var(--color-2);
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  position: relative;
+}
+
+.box {
+  block-size: 100vb;
+  display: grid;
+  grid-row: 1 / span 1;
+  inline-size: 50vi;
+  place-items: center;
+}
+
+.box--a {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  grid-column: 1 / span 1;
+}
+
+.box--b {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  grid-column: 2 / span 1;
+}
